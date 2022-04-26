@@ -77,7 +77,7 @@ public class Lab {
         try {
             while (iterator.hasNext()) {
                 if ((abstractCommand = iterator.next()).getName().equalsIgnoreCase(command[0])) {
-                    abstractCommand.execute(commandManager, command,"Person.csv");
+                    abstractCommand.execute(commandManager, command,"Ticket.csv");
                     new History().getHistory().add(abstractCommand.getName()+"\n");
                     exist=true;//set true when command exists
                 }
@@ -103,4 +103,4 @@ public class Lab {
         }
 
     }
-}、、、、、、、
+}
