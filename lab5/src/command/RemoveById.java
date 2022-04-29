@@ -8,11 +8,11 @@ import java.io.IOException;
 public class RemoveById extends AbstractCommand {
     public RemoveById() {
         this.name = "RemoveById";
-        this.help = "remove one element from the collection whose eyeColor field value is equivalent to the specified one";
+        this.help = "remove element from collection by its id";
     }
 
     @Override
-    public void execute(CommandManager commandManager, String[] args, String Saver) throws IOException, ParaInapproException, NullException, ValueTooSmallException, ValueTooSmallException {
+    public void execute(CommandManager commandManager, String[] args, String Saver) throws IOException, ParaInapproException, NullException, ValueTooSmallException {
         if(args.length>2||args.length==1){
             throw new ParaInapproException("this command only and must accept one parameter\n");
         }else {
