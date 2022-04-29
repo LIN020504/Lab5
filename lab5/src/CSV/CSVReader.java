@@ -29,7 +29,7 @@ public class CSVReader {
         String s;
         while((s = bufferedReader.readLine())!=null) {
             String[] information = s.split(",");
-            Coordinates coordinates = new Coordinates(Long.valueOf(information[4]), Long.valueOf(information[5]));
+            Coordinates coordinates = new Coordinates(Long.valueOf(information[4]),Long.valueOf(information[5]));
             Person person = new Person(coordinates, information[7], Long.valueOf(information[8]));
             Ticket t = new Ticket();
             Ticket.balaceicode();
